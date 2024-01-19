@@ -1,0 +1,66 @@
+@mixin paragraf {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 25.6px;
+}
+
+.footer {
+  background-color: #001524;
+  color: #fff;
+  padding: 5rem;
+
+  &-logo {
+    width: 16rem;
+  }
+
+  &__link-box {
+    &--2 {
+      margin-top: 3rem;
+    }
+  }
+
+  p {
+    @include paragraf();
+    font-weight: 700;
+    margin-top: 4rem;
+    width: 60%;
+    color: #9ca3af;
+    font-style: italic;
+  }
+
+  ul {
+    padding: 0;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    font-weight: 500;
+
+    li {
+      margin-top: 0.6rem;
+      a {
+        color: #9ca3af;
+        text-decoration: none;
+        transition: 0.2s ease-in;
+      }
+
+      :hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__mobile-app {
+    p {
+      @include paragraf();
+      font-style: normal;
+
+      font-weight: 500;
+      margin-top: 2rem;
+      width: 75%;
+      color: #9ca3af;
+    }
+
+    a {
+      color: #8bc34a;
+    }
+  }
+}
