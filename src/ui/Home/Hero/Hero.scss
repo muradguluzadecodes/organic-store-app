@@ -1,0 +1,62 @@
+@import "../../../scss/_variables.scss";
+@import "../../../scss/_utils.scss";
+
+.hero {
+  background-color: $background-color-200;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    width: 20rem;
+    background-image: url(leaves-free-img.png);
+    background-position: 50% 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .row {
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__img-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content-box {
+    padding: 6rem 0 6rem 6rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    @media screen and (max-width: 992px) {
+      text-align: center;
+      padding: 0;
+      align-items: center;
+    }
+
+    img {
+      width: 8rem;
+    }
+
+    p {
+      width: 80%;
+      font-size: 1.6rem;
+      color: $color-grey-800;
+    }
+
+    h1 {
+      font-size: 5.2rem;
+      font-weight: 600;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+    }
+  }
+}

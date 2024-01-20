@@ -4,15 +4,16 @@ import Navigation from "../Navigation/Navigation";
 
 import "./AppLayout.scss";
 import Footer from "../Footer/Footer";
+import Main from "../Main/Main";
 
 /* eslint-disable react/prop-types */
 export default function AppLayout() {
   return (
     <>
       <Navigation />
-      <main style={{ minHeight: "50rem" }}>
+      <Main>
         <Outlet />
-      </main>
+      </Main>
       <Footer />
     </>
   );

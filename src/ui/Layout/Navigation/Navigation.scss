@@ -7,41 +7,89 @@
   display: flex;
   padding: 2rem;
   // background-color: aqua;
-
-  .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // background-color: #d7edbd;
-    width: 100%;
-
-    &__items {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-      padding-top: 1rem;
-
-      .active {
-        color: $color-brand-500;
-      }
-
-      a {
-        text-decoration: none;
-        font-weight: 400;
-        color: #1f2937;
-        font-size: 1.6rem;
-        transition: color 0.2s ease-in;
-
-        &:hover {
-          color: $color-brand-500;
-        }
-      }
-    }
-  }
 }
 
 .logo-box {
   &__logo {
     max-width: 15rem;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 1rem;
+
+    &--1 {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    &--2 {
+      flex-grow: 2;
+      justify-content: flex-end;
+
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .active {
+      color: $color-brand-500;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      color: #1f2937;
+      font-size: 1.6rem;
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: $color-brand-500;
+      }
+    }
+  }
+}
+
+.icons {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+
+  .menu {
+    display: none;
+    background-color: $color-brand-500;
+    padding: 0.6rem;
+
+    transition: 0.2s ease-in;
+
+    &:hover {
+      background-color: $color-brand-700;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+
+    .menu {
+      display: inline-block;
+    }
+
+    .user {
+      display: none;
+    }
   }
 }

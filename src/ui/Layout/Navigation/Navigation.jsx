@@ -7,6 +7,7 @@ import "../Navigation/Navigation.scss";
 import Basket from "../../Icons/Basket";
 import UserIcon from "../../Icons/UserIcon";
 import { Col, Row } from "react-bootstrap";
+import { CgMenuRight } from "react-icons/cg";
 
 export default function Navigation() {
   return (
@@ -24,7 +25,7 @@ export default function Navigation() {
                 </Link>
               </div>
               <div className="links">
-                <ul className="links__items">
+                <ul className="links__items links__items--1">
                   <li>
                     <NavLink to="/everything">Everything</NavLink>
                   </li>
@@ -36,19 +37,23 @@ export default function Navigation() {
                     <NavLink to="/juice">Juice</NavLink>
                   </li>
                 </ul>
-                <ul className="links__items">
+                <ul className="links__items links__items--2">
                   <li>
                     <NavLink to="/about">About</NavLink>
                   </li>
                   <li>
                     <NavLink to="/contact">Contact</NavLink>
                   </li>
-
+                </ul>
+                <ul className="icons">
                   <li>
                     <Basket />
                   </li>
-                  <li>
+                  <li className="user">
                     <UserIcon />
+                  </li>
+                  <li className="menu">
+                    <CgMenuRight color="#fff" size={18} />
                   </li>
                 </ul>
               </div>

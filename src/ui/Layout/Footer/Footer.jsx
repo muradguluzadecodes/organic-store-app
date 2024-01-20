@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 
 import "../Footer/Footer.scss";
-import Heading from "../../Heading";
+import Heading from "../../components/Button/Heading/Heading";
 import { Link } from "react-router-dom";
 import "../../../scss/_utils.scss";
 import "../../../scss/_variables.scss";
@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="footer__container pad-bottom-lg">
         <Container fluid="lg">
           <Row>
-            <Col lg={6}>
+            <Col lg={6} xs={12}>
               <div className="footer-item-box">
                 <img
                   src="organic-store-white-logo.png"
@@ -28,7 +28,7 @@ export default function Footer() {
                 </p>
               </div>
             </Col>
-            <Col>
+            <Col lg={3} xs={12}>
               <div className="footer__link-box ">
                 <Heading as="h3">Quick Links</Heading>
                 <ul>
@@ -73,7 +73,7 @@ export default function Footer() {
                 </ul>
               </div>
             </Col>
-            <Col>
+            <Col lg={3} xs={12}>
               <div className="footer__mobile-app">
                 <Heading as="h3">Download Our Mobile App</Heading>
                 <p>
@@ -117,10 +117,12 @@ export default function Footer() {
       </div>
       <Container className="pad-top-lg">
         <Row>
-          <Col className="footer-bottom">
+          <Col lg={6} sm={12}>
             <div className="copyright">
               <p>Copyright by Murad Guluzade 2024 | Organic Store </p>
             </div>
+          </Col>
+          <Col lg={6} sm={12}>
             <div className="socials">
               <Link to="">
                 <FaInstagram size="20px" />
