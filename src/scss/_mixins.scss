@@ -1,6 +1,15 @@
 @mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin transition-color {
   transition: color 0.3s ease-in;
+}
+
+@mixin paragraf {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 25.6px;
 }

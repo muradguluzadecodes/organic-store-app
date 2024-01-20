@@ -1,4 +1,6 @@
-@import url(../../../scss/_variables.scss);
+@import "../../../scss/_mixins.scss";
+@import "../../../scss/_variables.scss";
+@import "../../../scss/main.scss";
 
 .navigation {
   max-width: 100%;
@@ -10,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d7edbd;
+    // background-color: #d7edbd;
     width: 100%;
 
     &__items {
@@ -20,7 +22,7 @@
       padding-top: 1rem;
 
       .active {
-        color: #8bc34a;
+        color: $color-brand-500;
       }
 
       a {
@@ -28,10 +30,10 @@
         font-weight: 400;
         color: #1f2937;
         font-size: 1.6rem;
-        transition: color 0.3s ease-in;
+        transition: color 0.2s ease-in;
 
         &:hover {
-          color: #8bc34a;
+          color: $color-brand-500;
         }
       }
     }

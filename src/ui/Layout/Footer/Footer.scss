@@ -1,50 +1,61 @@
-@mixin paragraf {
-  font-family: "Open Sans", sans-serif;
+@import "../../../scss/_mixins.scss";
+@import "../../../scss/_variables.scss";
+@import "../../../scss/main.scss";
+
+@mixin list-style {
+  padding: 0;
   font-size: 1.6rem;
-  line-height: 25.6px;
+  margin-top: 3rem;
+  font-weight: 500;
+}
+
+@mixin link-style {
+  text-decoration: none;
+  transition: 0.2s ease-in;
 }
 
 .footer {
   background-color: #001524;
   color: #fff;
-  padding: 5rem;
+  padding: 5rem 0;
+
+  &__container {
+    width: 100%;
+    border-bottom: 1px solid $color-grey-700;
+    padding: 0 4rem;
+  }
+
+  li {
+    margin-top: 0.6rem;
+  }
 
   &-logo {
     width: 16rem;
   }
 
   &__link-box {
-    &--2 {
-      margin-top: 3rem;
-    }
-  }
+    ul {
+      @include list-style;
 
-  p {
-    @include paragraf();
-    font-weight: 700;
-    margin-top: 4rem;
-    width: 60%;
-    color: #9ca3af;
-    font-style: italic;
-  }
-
-  ul {
-    padding: 0;
-    font-size: 1.6rem;
-    margin-top: 3rem;
-    font-weight: 500;
-
-    li {
-      margin-top: 0.6rem;
       a {
         color: #9ca3af;
-        text-decoration: none;
-        transition: 0.2s ease-in;
+        @include link-style;
       }
 
       :hover {
         color: #fff;
       }
+    }
+  }
+
+  &-item-box {
+    p {
+      @include paragraf();
+      font-weight: 700;
+      margin-top: 4rem;
+      width: 60%;
+      color: $color-grey-500;
+      font-style: italic;
     }
   }
 
@@ -56,11 +67,60 @@
       font-weight: 500;
       margin-top: 2rem;
       width: 75%;
-      color: #9ca3af;
+      color: $color-grey-500;
+    }
+
+    ul {
+      @include list-style;
     }
 
     a {
-      color: #8bc34a;
+      color: $color-brand-500;
+      @include link-style;
+
+      &:hover {
+        color: $color-brand-200;
+      }
+    }
+  }
+
+  &__stores {
+    display: flex;
+    gap: 1.6rem;
+    cursor: pointer;
+
+    img {
+      width: 12rem;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: $color-grey-500;
+  font-weight: 500;
+  font-family: $font-primary;
+  p {
+    margin: 0;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 3rem;
+
+  a {
+    @include link-style;
+    color: $color-grey-400;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-brand-500;
     }
   }
 }
