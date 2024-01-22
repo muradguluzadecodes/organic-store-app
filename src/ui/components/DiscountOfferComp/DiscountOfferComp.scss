@@ -1,0 +1,13 @@
+@import "../../../scss/_variables.scss";
+
+.discount-offer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: $color-grey-0;
+  }
+}

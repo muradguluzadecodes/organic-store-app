@@ -8,8 +8,10 @@
   position: relative;
 
   &__content-box {
+    width: 100%;
     text-align: center;
     padding: 2rem;
+    background-color: $color-grey-0;
 
     & > * {
       margin: 0.4rem;

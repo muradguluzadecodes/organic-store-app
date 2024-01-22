@@ -1,6 +1,9 @@
-import BestSellersSection from "../ui/components/BestSellers/BestSellersSection";
+import BestSellersSection from "../ui/components/Sections/BestSellersSection";
 import Hero from "../ui/components/Hero/Hero";
-import InfoContainer from "../ui/components/InfoContainer/InfoContainer";
+// import InfoContainer from "../ui/components/InfoContainer/InfoContainer";
+import OffersSection from "../ui/components/Sections/OffersSection";
+import FeaturesSection from "../ui/components/Sections/FeaturesSection";
+import DiscountOfferSection from "../ui/components/Sections/DiscountOfferSection";
 
 // import { MdLocalShipping } from "react-icons/md";
 
@@ -8,8 +11,11 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <InfoContainer />
+
+      <FeaturesSection />
       <BestSellersSection />
+      <OffersSection />
+      <DiscountOfferSection />
     </div>
   );
 }

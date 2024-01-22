@@ -1,0 +1,46 @@
+@import "../../../scss/_variables.scss";
+@import "../../../scss/main.scss";
+
+.offer-card {
+  background-color: $color-grey-0;
+  box-shadow: $shadow-md;
+  border-radius: 8px;
+  padding: 4rem 4rem 0 4rem;
+  height: 50rem;
+  overflow: hidden;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 2rem;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__content-box {
+    padding: 2rem;
+
+    h3 {
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $color-grey-600;
+    }
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      width: 30rem;
+      transition: all 0.2s ease-in;
+      z-index: 100000;
+    }
+  }
+}

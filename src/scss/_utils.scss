@@ -1,3 +1,5 @@
+@import "../scss/_variables.scss";
+
 /* Margin top */
 
 .mg-top-sm {
@@ -68,4 +70,18 @@
 
 .pad-top-lg {
   padding-top: 4rem;
+}
+
+/* Background */
+
+.bg-white {
+  background-color: $color-grey-0;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-milky {
+  background-color: $background-color-300;
 }

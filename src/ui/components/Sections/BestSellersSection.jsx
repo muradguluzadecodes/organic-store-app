@@ -1,9 +1,9 @@
 import ProductCard from "../ProductCard/ProductCard";
-import BestSellers from "./BestSellers";
+import Section from "../Section/Section";
 
 export default function BestSellersSection() {
   return (
-    <BestSellers>
+    <Section headingText="Best Selling Products" color="bg-white">
       <ProductCard
         name="Air freshener"
         price={20}
@@ -30,6 +30,6 @@ export default function BestSellersSection() {
         image="edible-oil-400x400.jpg"
         sale={true}
       />
-    </BestSellers>
+    </Section>
   );
 }

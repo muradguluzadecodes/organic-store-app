@@ -19,7 +19,7 @@ export default function Hero() {
           <Col>
             <div className="hero__content-box">
               <img src="logo-leaf-new.png" />
-              <Heading as="h2">Best Quality Products</Heading>
+              <Heading as="h5">Best Quality Products</Heading>
               <Heading as="h1">Join The Organic Movement!</Heading>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
@@ -28,7 +28,7 @@ export default function Hero() {
               </p>
               <Button
                 size="medium"
-                onClick=""
+                onClick={() => {}}
                 left={true}
                 icon={<RiShoppingCart2Line className="icon" size={18} />}
               >
