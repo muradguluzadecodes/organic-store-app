@@ -1,8 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "../Hero/Hero.scss";
 import "../../../scss/_utils.scss";
-import Heading from "../../components/Button/Heading/Heading";
+import Heading from "../../components/Heading/Heading";
 import Button from "../../components/Button/Button";
+
 import { RiShoppingCart2Line } from "react-icons/ri";
 
 export default function Hero() {

@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-import "../Button/Button.scss";
 
-// iconun sag ve ya solda olmagini hell edecem
+import "../Button/Button.scss";
 
 const Button = ({ onClick, type = "primary", size, children, icon, left }) => {
   return (

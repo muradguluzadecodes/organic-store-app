@@ -1,0 +1,54 @@
+@import "../../../scss/_variables.scss";
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__content-box {
+    text-align: center;
+    padding: 2rem;
+
+    & > * {
+      margin: 0.4rem;
+    }
+
+    .category {
+      color: $color-grey-400;
+      font-size: 1.6rem;
+    }
+
+    .product-name {
+      font-size: 1.8rem;
+      font-family: $font-secondary;
+      font-weight: 600;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+
+  .sale {
+    width: 3.6rem;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-brand-600;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}

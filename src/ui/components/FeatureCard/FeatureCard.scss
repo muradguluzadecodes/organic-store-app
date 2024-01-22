@@ -1,0 +1,33 @@
+@import "../../../scss/_variables.scss";
+
+.feature-card {
+  background-color: $background-color-dark-500;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  gap: 1.4rem;
+  border-radius: 5px;
+
+  &__icon-box {
+    color: $color-brand-500;
+  }
+
+  &__text-box {
+    color: $color-grey-0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 0.4rem;
+
+    h3 {
+      margin: 0;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,7 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 
 import "../Footer/Footer.scss";
-import Heading from "../../components/Button/Heading/Heading";
+import Heading from "../../components/Heading/Heading";
+
 import { Link } from "react-router-dom";
 import "../../../scss/_utils.scss";
 import "../../../scss/_variables.scss";
