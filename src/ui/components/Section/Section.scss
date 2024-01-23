@@ -1,0 +1,10 @@
+.has-leaf {
+  position: relative;
+
+  &::after {
+    content: url(basil-leaf.png);
+    position: absolute;
+    top: -5rem;
+    left: 42%;
+  }
+}

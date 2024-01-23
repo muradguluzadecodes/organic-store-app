@@ -8,7 +8,7 @@ export default function DiscountOfferSection() {
       <Section color="bg-black">
         <DiscountOfferComp />
       </Section>
-      <div className="pad-top-bot-md" style={{ textAlign: "center" }}>
+      <div className="pad-top-bot-md bg-milky" style={{ textAlign: "center" }}>
         <p style={{ margin: 0, fontSize: "24px", fontWeight: 700 }}>
           {" "}
           Try It For Free. No Registration Needed.{" "}

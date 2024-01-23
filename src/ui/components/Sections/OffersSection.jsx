@@ -3,7 +3,7 @@ import Section from "../Section/Section";
 
 export default function OffersSection() {
   return (
-    <Section color="bg-milky">
+    <Section hasLeaf={true} color="bg-milky">
       <OfferCard
         headingText="Farm Fresh Fruits"
         bodyText="Ut sollicitudin quam vel purus tempus, vel eleifend felis varius."

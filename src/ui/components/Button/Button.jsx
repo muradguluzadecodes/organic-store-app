@@ -2,7 +2,14 @@
 
 import "../Button/Button.scss";
 
-const Button = ({ onClick, type = "primary", size, children, icon, left }) => {
+const Button = ({
+  onClick,
+  type = "primary",
+  size = "medium",
+  children,
+  icon,
+  left,
+}) => {
   return (
     <button
       className={`button btn-type--${type} btn-size--${size}`}

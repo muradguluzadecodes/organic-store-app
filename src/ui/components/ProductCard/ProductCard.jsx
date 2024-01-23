@@ -17,7 +17,7 @@ export default function ProductCard({ image, name, category, price, sale }) {
         <div className="product-card__content-box">
           <p className="category">{category}</p>
           <p className="product-name">{name}</p>
-          <Stars size={16} />
+          <Stars filled={true} size={16} />
           <p className="price">{formatCurrency(price)}</p>
         </div>
         {sale && (
