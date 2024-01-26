@@ -3,7 +3,11 @@ import Section from "../Section/Section";
 
 export default function TrendingProductsSection() {
   return (
-    <Section headingText="Trending Products" color="bg-white">
+    <Section
+      alignmentHeading="center"
+      headingText="Trending Products"
+      color="bg-white"
+    >
       <ProductCard
         name="Air freshener"
         price={20}

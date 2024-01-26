@@ -5,7 +5,7 @@ import Section from "../Section/Section";
 export default function PageHeading() {
   return (
     <Section color="bg-milky">
-      <Col fluid className="">
+      <Col fluid className="d-flex justify-content-center">
         <Heading as="h1">About Us</Heading>
       </Col>
     </Section>

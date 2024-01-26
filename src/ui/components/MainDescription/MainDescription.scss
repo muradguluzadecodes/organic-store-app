@@ -1,0 +1,17 @@
+.main-description {
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -3,7 +3,11 @@ import Section from "../Section/Section";
 
 export default function BestSellersSection() {
   return (
-    <Section headingText="Best Selling Products" color="bg-white">
+    <Section
+      alignmentHeading="center"
+      headingText="Best Selling Products"
+      color="bg-white"
+    >
       <ProductCard
         name="Air freshener"
         price={20}

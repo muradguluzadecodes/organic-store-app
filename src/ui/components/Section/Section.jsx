@@ -11,13 +11,21 @@ export default function Section({
   headingText,
   color = null,
   hasLeaf,
+  alignmentHeading,
 }) {
   return (
     <section
-      className={`${color} ${hasLeaf ? "has-leaf" : ""}  pad-top-bot-xlg`}
+      className={`${color} ${hasLeaf ? "has-leaf" : ""}  ${
+        color === "bg-black" ? "pad-top-bot-md" : "pad-top-bot-xlg"
+      }`}
     >
       <Container>
-        {headingText && <SectionHeading headingText={headingText} />}
+        {headingText && (
+          <SectionHeading
+            alignment={alignmentHeading}
+            headingText={headingText}
+          />
+        )}
         <Row>{children}</Row>
       </Container>
     </section>

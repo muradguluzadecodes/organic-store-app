@@ -3,8 +3,13 @@
 
   &::after {
     content: url(basil-leaf.png);
+    transform: scale(0.7);
     position: absolute;
     top: -5rem;
     left: 42%;
+
+    @media screen and (max-width: 576px) {
+      left: 20%;
+    }
   }
 }

@@ -3,10 +3,10 @@ import { Row } from "react-bootstrap";
 import Heading from "../Heading/Heading";
 import "../SectionHeading/SectionHeading.scss";
 
-export default function SectionHeading({ headingText }) {
+export default function SectionHeading({ headingText, alignment }) {
   return (
     <Row>
-      <div className="heading-box">
+      <div className="heading-box" style={{ alignItems: `${alignment}` }}>
         <Heading as="h2">{headingText}</Heading>
         <img src="logo-leaf-new.png" alt="" />
       </div>

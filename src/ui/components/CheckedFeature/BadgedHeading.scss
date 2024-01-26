@@ -1,0 +1,17 @@
+.badged-heading {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &__img {
+    width: 14rem;
+  }
+
+  &__text-box {
+    p {
+      font-size: 1.6rem;
+      width: 80%;
+    }
+  }
+}
