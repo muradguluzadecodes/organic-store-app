@@ -6,7 +6,7 @@ import StatsSection from "../ui/components/Sections/StatsSection";
 export default function About() {
   return (
     <>
-      <PageHeading />
+      <PageHeading>About</PageHeading>
       <MainAboutSection />
       <StatsSection />
       <CertifiedProductsSection />

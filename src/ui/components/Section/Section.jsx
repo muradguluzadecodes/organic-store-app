@@ -9,7 +9,7 @@ import "../Section/Section.scss";
 export default function Section({
   children,
   headingText,
-  color = null,
+  color = "bg-white",
   hasLeaf,
   alignmentHeading,
 }) {
