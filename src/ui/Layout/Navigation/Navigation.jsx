@@ -30,7 +30,7 @@ export default function Navigation() {
                     <NavLink to="/everything">Everything</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/other">Groceries</NavLink>
+                    <NavLink to="/groceries">Groceries</NavLink>
                   </li>
 
                   <li>

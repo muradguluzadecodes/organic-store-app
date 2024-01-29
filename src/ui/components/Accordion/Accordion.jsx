@@ -36,7 +36,6 @@ export default function Accordion({ question, answer }) {
         className={`accordion-text `}
         style={{
           height: `${isOpen ? height : "0"}px`,
-          //   padding: `${isOpen ? "16" : "0"}px`,
         }}
       >
         <p>{answer}</p>

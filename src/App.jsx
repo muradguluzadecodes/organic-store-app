@@ -5,6 +5,9 @@ import AppLayout from "./ui/Layout/AppLayout/AppLayout";
 import About from "./pages/About";
 import "./scss/main.scss";
 import Contact from "./pages/Contact";
+import Everything from "./pages/Everything";
+import Groceries from "./pages/Groceries";
+import Juice from "./pages/Juice";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/everything",
+        element: <Everything />,
+      },
+      {
+        path: "/groceries",
+        element: <Groceries />,
+      },
+      {
+        path: "/juice",
+        element: <Juice />,
       },
     ],
   },
