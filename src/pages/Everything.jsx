@@ -1,6 +1,10 @@
-import { Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Section from "../ui/components/Section/Section";
 import Heading from "../ui/components/Heading/Heading";
+
+import ProductCard from "../ui/components/ProductCard/ProductCard";
+import ProductsPageColLeft from "../ui/components/Cols/ProductsPageColLeft";
+import ProductsPageColRight from "../ui/components/Cols/ProductsPageColRight";
 
 // { value: "name-asc", title: "Sort by name A-Z" },
 // { value: "name-desc", title: "Sort by name Z-A" },
@@ -12,10 +16,9 @@ import Heading from "../ui/components/Heading/Heading";
 export default function Everything() {
   return (
     <Section color="bg-milky">
-      <Col md={12} lg={4}>
-        first
-      </Col>
-      <Col md={12} lg={8}>
+      <ProductsPageColLeft>First</ProductsPageColLeft>
+
+      <ProductsPageColRight>
         <div className="products">
           <div className="products-header">
             <p>Home/Shop</p>
@@ -33,8 +36,88 @@ export default function Everything() {
               <option value="popularity">Sort by price: high to low</option>
             </select>
           </div>
+          <Container fluid>
+            <Row>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+              <Col sm={12} md={4}>
+                <ProductCard
+                  name="Air freshener"
+                  price={20}
+                  category="juice"
+                  image="edible-oil-400x400.jpg"
+                />
+              </Col>
+            </Row>
+          </Container>
         </div>
-      </Col>
+      </ProductsPageColRight>
     </Section>
   );
 }
