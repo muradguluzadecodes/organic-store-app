@@ -27,7 +27,7 @@ export default function Navigation() {
               <div className="links">
                 <ul className="links__items links__items--1">
                   <li>
-                    <NavLink to="/home">Everything</NavLink>
+                    <NavLink to="/shop">Everything</NavLink>
                   </li>
                   <li>
                     <NavLink to="/groceries">Groceries</NavLink>

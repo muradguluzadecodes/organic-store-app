@@ -5,10 +5,11 @@ import ProductCard from "../ProductCard/ProductCard";
 import Pagination from "../Pagination/Pagination";
 import ColThreeItems from "../Cols/ColThreeItems";
 import ProductsHeading from "../ProductsHeading/ProductsHeading";
+import MainProductsContainer from "../MainProductsContainer/MainProductsContainer";
 
 export default function MainProductsSection() {
   return (
-    <div className="products">
+    <MainProductsContainer>
       <ProductsHeading />
       <Sort />
       <Container fluid>
@@ -96,6 +97,6 @@ export default function MainProductsSection() {
         </Row>
         <Pagination />
       </Container>
-    </div>
+    </MainProductsContainer>
   );
 }

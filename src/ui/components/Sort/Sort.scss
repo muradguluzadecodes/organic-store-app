@@ -15,14 +15,5 @@
     background-color: $background-color-300;
     border: none;
     font-size: 1.8rem;
-
-    option {
-      background-color: $color-brand-200;
-      border: none;
-
-      &:hover {
-        background-color: $color-brand-500;
-      }
-    }
   }
 }

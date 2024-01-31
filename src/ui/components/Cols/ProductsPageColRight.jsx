@@ -6,7 +6,7 @@ export default function ProductsPageColRight({ children }) {
     <Col
       sm={{ order: 2, span: 12 }}
       md={{ span: 12, order: 1 }}
-      lg={{ span: 8, order: 2 }}
+      lg={{ span: 9, order: 2 }}
     >
       {children}
     </Col>
