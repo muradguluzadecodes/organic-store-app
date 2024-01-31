@@ -1,0 +1,17 @@
+@import "../../../scss/_variables.scss";
+
+.pagination-btn {
+  font-family: $font-primary;
+  font-size: 1.4rem;
+  color: $color-brand-500;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border: 1px solid $color-brand-500;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: $color-brand-500;
+    color: $color-grey-50;
+  }
+}

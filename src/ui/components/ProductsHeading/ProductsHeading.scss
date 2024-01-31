@@ -1,0 +1,13 @@
+@import "../../../scss/_variables.scss";
+
+.products-heading {
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: $color-grey-500;
+  }
+
+  h1 {
+    color: $color-brand-500;
+  }
+}
